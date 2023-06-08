@@ -11,6 +11,7 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
   > h1 {
     font-size: 48px;
     color: #FF859B;
@@ -38,7 +39,10 @@ export const Form = styled.form`
   justify-content: center;
   align-items: center;
 
-  
+  .entrar {
+    margin-top: 0;
+    width: 100%;
+  }
 
   > a {
     margin-top: 52px;

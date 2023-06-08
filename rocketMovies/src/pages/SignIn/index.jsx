@@ -13,10 +13,12 @@ export function SignIn() {
           <h2>Faça seu login</h2>
         </Title>
 
-        <Input type="text" placeholder="E-mail"/>
+        <Input type="text" placeholder="E-mail" />
         <Input type="text" placeholder="Senha" />
 
-        <Button title="Entrar" />
+        <Link to="/perfil" className="entrar">
+          <Button title="Entrar" />
+        </Link>
 
         <Link to="signup">Criar conta</Link>
       </Form>
