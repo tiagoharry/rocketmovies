@@ -1,13 +1,15 @@
-import { Container, Form, Avatar } from "./styles"
+import { Container, Form, Avatar, Header } from "./styles"
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
+import { BsArrowLeftShort } from "react-icons/bs"
+import { Link } from "react-router-dom"
 
 export function Perfil() {
   return (
     <Container>
-      <header>
-        <a href="/">Voltar</a>
-      </header>
+      <Header>
+      <Link to="/"><BsArrowLeftShort />Voltar</Link>
+      </Header>
      
       <Form>
         <Avatar>

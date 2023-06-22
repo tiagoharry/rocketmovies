@@ -1,16 +1,20 @@
 import { Routes, Route } from 'react-router-dom'
 
-import { SignIn } from '../SignIn'
-import { SignUp } from '../SignUp'
 import { Perfil } from '../Perfil'
+import { Create } from '../Create'
+import { Preview } from '../Preview'
+import { Home } from '../Home'
+import { SignIn } from '../SignIn'
 
 
 export function AppRoute() {
   return (
     <Routes>
-      <Route path="/" element={<SignIn/>}/>
-      <Route path="/signup" element={<SignUp/>}/>
-      <Route path="/perfil" element={<Perfil/>}/>
+      <Route path="/" element={<Home />}/>
+      <Route path="/create" element={<Create />}/>
+      <Route path="/preview" element={<Preview />}/>
+      <Route path="/perfil" element={<Perfil />}/>
+      <Route path="/signin" element={<SignIn />}/>
     </Routes>
   )
 }
